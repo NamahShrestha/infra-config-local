@@ -28,8 +28,10 @@ spec:
         valueFiles:
           - $values/hydra/development.yaml
         releaseName: hydra
-        values:
-          dsn: "postgres://hydrauser:testpwd123@postgresql-service:5432/hydradb"
+        values:  |
+          hydra:
+            config:
+              dsn: "postgres://hydrauser:testpwd123@postgresql-service.ory.svc.cluster.local:5432/hydradb"
       chart: hydra
     - repoURL: 'https://github.com/NamahShrestha/infra-config-local.git'
       path: .
