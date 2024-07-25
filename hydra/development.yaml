@@ -93,7 +93,7 @@ hydra:
   # -- The ORY Hydra configuration. For a full list of available settings, check:
   #  https://www.ory.sh/docs/hydra/reference/configuration
   config:
-    dsn: memory
+    # dsn: memory
     serve:
       public:
         port: 4444
